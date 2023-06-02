@@ -1,6 +1,4 @@
 from flask import Flask, make_response, request, session
-from flask_cors import CORS
-
 
 app = Flask(__name__)
 app.secret_key = 'supersecret'
@@ -22,7 +20,7 @@ def count():
         counter_dict,
         200
     )
-    print(response)
+    response.set_cookie('mouse', 'mickey')
 
     return response
 
