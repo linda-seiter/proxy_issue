@@ -6,7 +6,9 @@ app = Flask(__name__)
 app.secret_key = 'supersecret'
 
 
-CORS(app, supports_credentials=True, origins=["http://localhost:3000"])
+# CORS(app, supports_credentials=True, origins=["http://localhost:3000"])
+CORS(app, supports_credentials=True)
+
 
 # NOTE: export FLASK_RUN_PORT=5555
 

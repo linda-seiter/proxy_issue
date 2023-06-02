@@ -8,6 +8,7 @@ const Counter = () => {
   const fetchUserData = () => {
     fetch("http://127.0.0.1:5555/count", {
       credentials: "include",
+      mode: "cors",
     })
       .then((response) => {
         return response.json();
