@@ -3,7 +3,8 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 app.secret_key = 'supersecret'
-CORS(app, supports_credentials=True)
+CORS(app, supports_credentials=True, origins=["http://localhost:3000"])
+# CORS(app, supports_credentials=True)
 
 
 @app.route('/count')
