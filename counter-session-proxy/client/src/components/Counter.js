@@ -17,11 +17,7 @@ const Counter = () => {
     fetchUserData();
   }, []);
 
-  return (
-    <>
-      <p>Counter: {counter.value}</p>
-    </>
-  );
+  return <p>Counter: {counter.value}</p>;
 };
 
 export default Counter;
